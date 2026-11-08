@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Or Zilberberg · Computer Vision &amp; ML Engineer</title>
+<meta name="description" content="Freelance computer vision and machine learning engineer in Israel: detection, re-identification, OCR, visual inspection, anomaly detection, edge deployment.">
+<style>
+  :root {
+    --bg: #fbfaf7; --surface: #ffffff; --ink: #1d1f23; --muted: #5d636e;
+    --line: #e6e3dc; --accent: #0f6b5c; --accent-soft: #e3f1ed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417; --surface: #1a1d21; --ink: #ecebe7; --muted: #a2a7b0;
+      --line: #2b2f35; --accent: #5cc4ae; --accent-soft: #1d302c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 56px 20px 72px; }
+  header h1 { font-size: 2.3rem; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .role { font-size: 1.15rem; color: var(--accent); font-weight: 600; margin: 0 0 18px; }
+  .lede { font-size: 1.1rem; max-width: 640px; margin: 0 0 22px; }
+  .he { direction: rtl; text-align: right; color: var(--muted); margin: 0 0 26px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-block; padding: 10px 18px; border-radius: 8px; text-decoration: none;
+    font-weight: 600; border: 1px solid var(--accent); color: var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: var(--bg); }
+  h2 {
+    font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted); margin: 56px 0 16px; font-weight: 700;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .chips li {
+    background: var(--accent-soft); color: var(--ink); border-radius: 999px;
+    padding: 5px 14px; font-size: 0.95rem;
+  }
+  .cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .case {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    padding: 20px 22px;
+  }
+  .case h3 { margin: 0 0 4px; font-size: 1.08rem; }
+  .case .where { color: var(--accent); font-size: 0.9rem; font-weight: 600; margin: 0 0 10px; }
+  .case p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .steps li { counter-increment: s; padding-left: 44px; position: relative; }
+  .steps li::before {
+    content: counter(s); position: absolute; left: 0; top: 1px; width: 30px; height: 30px;
+    border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+    display: grid; place-items: center; font-weight: 700; font-size: 0.9rem;
+  }
+  .steps b { display: block; }
+  .steps span { color: var(--muted); }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .fact { border-top: 2px solid var(--accent); padding-top: 10px; }
+  .fact b { display: block; font-size: 1.02rem; }
+  .fact span { color: var(--muted); font-size: 0.93rem; }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); }
+  footer a { color: var(--accent); }
+  @media (max-width: 520px) { header h1 { font-size: 1.85rem; } main { padding-top: 36px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Or Zilberberg</h1>
+    <p class="role">Freelance Computer Vision &amp; Machine Learning Engineer · Israel</p>
+    <p class="lede">I build vision systems that run in the real world: detection and tracking on live cameras,
+      inspection and OCR on production lines, and models that fit on edge hardware.
+      In industry since 2017, at Juganu, Bright Machines and Autotalks. Available for proofs of concept,
+      contract work and part-time projects, remotely or on-site in Israel.</p>
+    <p class="he">מהנדס ראייה ממוחשבת ו-ML, פרילנסר. POC, פרויקטים וקבלנות משנה, מרחוק או בכל הארץ.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:orzilber0@gmail.com?subject=Project%20inquiry">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/or-zilberberg">LinkedIn</a>
+    </div>
+  </header>
+
+  <h2>What I work on</h2>
+  <ul class="chips">
+    <li>Object detection (YOLO)</li><li>Person re-identification</li><li>Face recognition</li>
+    <li>Product recognition</li><li>Visual inspection</li><li>OCR</li>
+    <li>Anomaly detection</li><li>Synthetic training data</li><li>Edge deployment (ONNX)</li>
+    <li>Video &amp; event detection</li><li>Tabular ML &amp; analytics</li>
+  </ul>
+
+  <h2>Selected work</h2>
+  <div class="cases">
+    <article class="case">
+      <h3>Real-time retail vision at scale</h3>
+      <p class="where">Juganu</p>
+      <p>Deep-learning pipelines for stores: YOLO object detection, face recognition and body
+        re-identification across cameras, built in Python and OpenCV on Linux.</p>
+    </article>
+    <article class="case">
+      <h3>Product recognition on the edge</h3>
+      <p class="where">Juganu</p>
+      <p>Led product-recognition work and deployed models as PyTorch and ONNX for efficient,
+        real-time inference on edge devices.</p>
+    </article>
+    <article class="case">
+      <h3>Machine vision for automated assembly</h3>
+      <p class="where">Bright Machines</p>
+      <p>Computer vision that automates the assembly stage of production lines in microfactories:
+        inspection, robot navigation and OCR.</p>
+    </article>
+    <article class="case">
+      <h3>Anomaly detection from a small dataset</h3>
+      <p class="where">Bright Machines</p>
+      <p>Unsupervised defect detection with autoencoders, PCA and clustering, built to cut
+        deployment time and complexity when labelled data is scarce.</p>
+    </article>
+    <article class="case">
+      <h3>CAD-to-image synthetic data</h3>
+      <p class="where">Bright Machines</p>
+      <p>A pipeline that turns CAD models into realistic training images for CNNs, with
+        augmentation and noise analysis, so models can be trained before real images exist.</p>
+    </article>
+    <article class="case">
+      <h3>Soccer highlight detection</h3>
+      <p class="where">B.Sc. final project</p>
+      <p>Semantic event detection in match broadcasts from image, audio and video, producing
+        goals-only, short and medium highlight clips automatically.</p>
+    </article>
+    <article class="case">
+      <h3>Data analysis &amp; ML on tabular data</h3>
+      <p class="where">Juganu · Autotalks</p>
+      <p>Predictive models and analytics with Pandas, NumPy, scikit-learn and Matplotlib, plus
+        automated performance-reporting tools.</p>
+    </article>
+    <article class="case">
+      <h3>Robot vs human chess</h3>
+      <p class="where">Side project</p>
+      <p>A robotic arm that plays chess against a person, reading the board with computer vision.</p>
+    </article>
+  </div>
+
+  <h2>How a project runs</h2>
+  <ol class="steps">
+    <li><b>Short call or message</b><span>You describe the problem and share a few sample images or videos.</span></li>
+    <li><b>Fixed-scope proof of concept</b><span>A working result on your own data before a bigger commitment.</span></li>
+    <li><b>Build and hand over</b><span>Production code, documentation and deployment to your hardware or cloud.</span></li>
+  </ol>
+
+  <h2>Background</h2>
+  <div class="facts">
+    <div class="fact"><b>In industry since 2017</b><span>Juganu, Bright Machines, Autotalks</span></div>
+    <div class="fact"><b>B.Sc. Electrical Engineering</b><span>Afeka College, computer-vision track</span></div>
+    <div class="fact"><b>Python · OpenCV · C++</b><span>PyTorch, ONNX, scikit-learn, SQL</span></div>
+    <div class="fact"><b>Hebrew · English</b><span>Remote, or on-site in Israel</span></div>
+  </div>
+
+  <footer>
+    Have images, video or documents that need a model? <a href="mailto:orzilber0@gmail.com?subject=Project%20inquiry">orzilber0@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
